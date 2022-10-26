@@ -3,15 +3,40 @@
   --grid-rows: 1;
 }
 
+body {
+  min-height: 100vh;
+  background-color: gray;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #container {
+  padding-top: 10px;
   display: grid;
-  grid-gap: 1em;
+  align-items: center;
+  max-width: 600px;
+  max-height: 600px;
+  min-height: 600px;
+  min-width: 600px;
+  grid-gap: 0em;
   grid-template-rows: repeat(var(--grid-rows), 1fr);
   grid-template-columns: repeat(var(--grid-cols), 1fr);
+  border: none;
+  justify-content: center;
 }
 
 .grid-item {
-  padding: 1em;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0em;
   border: 1px solid #ddd;
+  border-radius: 4px;
   text-align: center;
+}
+button {
+  border-radius: 10px;
 }
