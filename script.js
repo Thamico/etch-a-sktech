@@ -10,4 +10,10 @@ function makeRows(rows, cols) {
   }
 }
 
-makeRows(16, 16);
+function getGrid() {
+  let x;
+  let grid = prompt("Please enter how many grids one site has");
+  if (grid != null) {
+    makeRows(grid, grid);
+  }
+}
