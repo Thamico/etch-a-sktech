@@ -15,7 +15,3 @@
   border: 1px solid #ddd;
   text-align: center;
 }
-
-td.grid-item:hover {
-  background-color: yellow;
-}
